@@ -1,0 +1,14 @@
+{
+  "cmp-nvim-lsp": { "branch": "main", "commit": "99290b3ec1322070bcfb9e846450a46f6efa50f0" },
+  "lazy.nvim": { "branch": "main", "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3" },
+  "modus-themes.nvim": { "branch": "master", "commit": "35980f19daef4745c96f1cb292d484fb1f33f822" },
+  "neoscroll.nvim": { "branch": "master", "commit": "f957373912e88579e26fdaea4735450ff2ef5c9c" },
+  "nvim-cmp": { "branch": "main", "commit": "b555203ce4bd7ff6192e759af3362f9d217e8c89" },
+  "nvim-lspconfig": { "branch": "master", "commit": "040001d85e9190a904d0e35ef5774633e14d8475" },
+  "nvim-treesitter": { "branch": "master", "commit": "2405274937718d520a40e03df92030dca6b4f0fd" },
+  "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
+  "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
+  "vim-fugitive": { "branch": "master", "commit": "fcb4db52e7f65b95705aa58f0f2df1312c1f2df2" },
+  "vscode.nvim": { "branch": "main", "commit": "18097b7aa47538afa780c821309c8b992972d726" },
+  "which-key.nvim": { "branch": "main", "commit": "8ab96b38a2530eacba5be717f52e04601eb59326" }
+}
