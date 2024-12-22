@@ -33,3 +33,19 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     end,
     desc = "Remove trailing whitespace on save",
 })
+-- F9 python
+local function run_python_in_venv()
+    local venv_python = vim.fn.getenv("VIRTUAL_ENV") and vim.fn.getenv("VIRTUAL_ENV") .. "/bin/python" or "python3"
+    vim.cmd("write") -- Save the file
+    vim.cmd("split | terminal " .. venv_python .. " " .. vim.fn.shellescape(vim.fn.expand("%")))
+end
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "python",
+    callback = function()
+        vim.keymap.set("n", "<F9>", run_python_in_venv, { buffer = true, desc = "Run Python in venv" })
+        vim.keymap.set("i", "<F9>", function()
+            vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "n", true)
+            run_python_in_venv()
+        end, { buffer = true, desc = "Run Python in venv" })
+    end,
+})
