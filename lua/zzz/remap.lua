@@ -47,3 +47,20 @@ end, { silent = true, noremap = true, desc = 'toggle signature' })
 vim.keymap.set({ 'n' }, '<Leader>k', function()
     vim.lsp.buf.signature_help()
 end, { silent = true, noremap = true, desc = 'toggle signature' })
+-- Nerdtree
+vim.keymap.set('n', '<leader>n', function()
+    vim.cmd('NERDTreeFocus')
+end, { silent = true, noremap = true, desc = 'NERDTree Focus' })
+
+vim.keymap.set('n', '<C-n>', function()
+    vim.cmd('NERDTree')
+end, { silent = true, noremap = true, desc = 'Open NERDTree' })
+
+vim.keymap.set('n', '<C-t>', function()
+    vim.cmd('NERDTreeToggle')
+end, { silent = true, noremap = true, desc = 'Toggle NERDTree' })
+
+vim.keymap.set('n', '<C-f>', function()
+    vim.cmd('NERDTreeFind')
+end, { silent = true, noremap = true, desc = 'Find in NERDTree' })
+
