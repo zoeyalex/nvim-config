@@ -1,6 +1,7 @@
 require("zzz.remap")
 -- Set line nums
 vim.opt.relativenumber = true
+vim.opt.nu = true
 -- Set Color
 vim.opt.termguicolors = true
 vim.cmd.colorscheme 'modus'
